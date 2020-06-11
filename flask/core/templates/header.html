@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="overflow-x: hidden; position: relative;">
+
+	<div class="container-fluid">
+		<div class="row">
+			<header class="container-fluid paddingZero backcolor_menu">
+				<nav class="navbar navbar-expand-md navbar-light static-top col-12 maxWidth content_padding mx-auto">
+					<div class="container-fluid justify-content-center">
+						<!-- Logo -->
+						<div class="logo col-7 col-sm-6 col-md-4 col-lg-3 col-xl-3 justify-content-center">
+							<a href="{{url_for('main.index')}}"><img src="../static/img/logo_horizontal.png"
+									alt="El Horno Dulce - Panadería y Repostería" /></a>
+						</div>
+						<!-- Button responsive max-width 767px -->
+						<button class="navbar-toggler " type="button" data-toggle="collapse"
+							data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<!-- Menú -->
+						<div class="collapse navbar-collapse col-12 col-md-8 col-lg-8 col-xl-6 justify-content-start"
+							id="navbarResponsive">
+							<ul id="listaMenu"
+								class="navbar-nav justify-content-center justify-content-md-around col-12 paddingZero">
+								<li class="nav-item menu_style">
+									<a class="text_menus nav-link" href="{{url_for('main.about')}}">Sobre Nosotros</a>
+								</li>
+								<li class="nav-item menu_style">
+									<a class="text_menus nav-link" href="{{url_for('main.products')}}">Productos</a>
+								</li>
+								<li class="nav-item menu_style">
+									<a class="text_menus nav-link" href="{{url_for('main.contact')}}">Contacto</a>
+								</li>
+								<li class="nav-item dropdown user_style">
+									<a class="text_menus nav-link dropdown-toggle" href="#" id="userLoggedInMenu"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-user" title="User" aria-hidden="true"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="userLoggedInMenu">
+										<a class="dropdown-item" href="{{url_for('main.carrito')}}">Carrito</a>
+										<a class="dropdown-item" href="{{url_for('main.login')}}">Login</a>
+										<a class="dropdown-item" href="{{url_for('main.signup')}}">Registro</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+
+	
+</body>
+
+</html>

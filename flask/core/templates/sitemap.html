@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sitemap - El Horno Dulce</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/header.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/cookies.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/sitemap.css">
+
+
+    <!-- Bootstrap CSS & Javascript -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="../static/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../static/fontawesome/css/fontawesome.css">
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+		$(document).ready(function () {
+            $.get("header", function (response) {
+				$('#header').html(response);
+			});
+			$.get("footer", function (response) {
+				$('#footer').html(response);
+			});
+		});
+	</script>
+
+
+    <!-- Carga de JQuery and Javascript -->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../static/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../static/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../static/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../static/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../static/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../static/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../static/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="overflow-x: hidden; position: relative;">
+
+    <!--header-->
+	<div id="header"></div>
+	<!--/header-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid">
+                <h1 class="marginVert20 col-11 mx-auto">Sitemap</h1>
+                <h2 class="marginVert20 col-11 mx-auto">Aquí están todas las páginas de nuestra web para que te sea más
+                    fácil encontrar lo que buscas.</h2>
+                <div class="col-12 col-sm-11 col-md-10 col-lg-10 col-xl-8 mx-auto marginVert40">
+                    <ul id="listacompleta" class="maxWidth1000 mx-auto">
+                        <li class="marginVert5"><a href="/">Homepage</a></li>
+                        <ul>
+                            <li class="marginVert5"><a href="about">Sobre Nosotros</a></li>
+                            <li class="marginVert5"><a href="products">Productos</a></li>
+                            <li class="marginVert5"><a href="contact">Contacto</a></li>
+                            <li class="marginVert5"><a href="alergenos">Información sobre alérgenos e intolerancias</a></li>
+                            <li class="marginVert5"><a href="faqs">FAQS</a></li>
+                            <li class="marginVert5"><a href="cookies">Política de Cookies</a></li>
+                            <li class="marginVert5"><a href="politica">Política de Privacidad</a></li>
+                            <li class="marginVert5"><a href="site">Sitemap</a></li>
+                            <li class="marginVert5"><a href="signup">Registro de Usuario</a></li>
+                            <li class="marginVert5"><a href="login">Login de Usuario</a></li>
+                            <li class="marginVert5"><a href="carrito">Carrito del Usuario</a></li>
+                        </ul>
+                        <li class="marginVert5"><a href="https://facebook.com/">Redes Sociales - Facebook</a></li>
+                        <li class="marginVert5"><a href="https://www.instagram.com/">Redes Sociales - Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-10 mx-auto text-center">
+                    <a id="btn" type="button" class="btn btn-default mx-auto col-12" href="contact">¿No encuentras
+                        lo que buscas? Contáctanos.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+	<div id="footer"></div>
+    <!--/Footer-->
+    
+    <!-- External Javascript -->
+	<script type="text/javascript" src="../static/js/cookies.js"></script>
+
+</body>
+
+</html>

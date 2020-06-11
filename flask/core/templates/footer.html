@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="overflow-x: hidden; position: relative;">
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="container-fluid footerContainer">
+				<footer class="container-fluid justify-content-center">
+					<div id="footerLeft" class="footerStyle col-12 col-md-7 col-lg-5 col-xl-4 margin_auto">
+						<p class="footerTitle">Enlaces útiles</p>
+						<ul class="col-12 col-sm-8 col-md-12 col-lg-12 col-xl-12 margin_auto">
+							<li id="alerg"><a href="{{url_for('main.alergenos')}}">Alérgenos</a></li>
+							<li id="prod"><a href="{{url_for('main.products')}}">Productos</a></li>
+							<li id="priv"><a href="{{url_for('main.politica')}}">Política de Privacidad</a></li>
+							<li id="faqs"><a href="{{url_for('main.faqs')}}">FAQS</a></li>
+							<li id="map"><a href="{{url_for('main.site')}}">SiteMap</a></li>
+							<li id="cook"><a href="{{url_for('main.cookies')}}">Política de Cookies</a></li>
+						</ul>
+					</div>
+					<div id="footerMiddle"
+						class="d-inline-flex footerStyle col-12 col-sm-6 col-md-5 col-lg-3 col-xl-3 margin_auto">
+						<div class="social_media col-8 col-sm-10 margin_auto">
+							<p class="footerTitle">Conéctate</p>
+							<ul class="col-md-8 col-lg-7 col-xl-7">
+								<li><a class="color_icons" target="_blank" href="https://www.facebook.com/"
+										aria-label="Facebook"><i class="fa fa-facebook-f fa-2x" title="Facebook"
+											aria-hidden="true"></i></a>
+								</li>
+								<li><a class="color_icons" target="_blank" href="https://www.instagram.com/"
+										aria-label="Instagram"><i class="fa fa-instagram fa-2x" title="Instagram"
+											aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="footerRight"
+						class="d-inline-flex footerStyle col-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 margin_auto">
+						<div class="col-12 margin_auto">
+							<p class="footerTitle">Alguna cuestión?</p>
+							<p class="contact"><a href="mailto:info@elhornodulce.es">info@elhornodulce.es</a></p>
+							<p class="contact">+34 912 345 678</p>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			<div class="container-fluid container_disclaimer">
+				<div class="disclaimer col-12">
+					<p class="copyright">Copyright © 2020 El Horno Dulce - Panadería y Repostería. Todos los derechos
+						reservados.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

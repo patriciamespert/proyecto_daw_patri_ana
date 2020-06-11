@@ -1,0 +1,38 @@
+{% macro render_input(name, placeholder, type="text") %}
+<p><input name="{{ name }}" type="{{ type }}" placeholder="{{ placeholder }}"></p>
+{% endmacro %}
+
+{% macro render_messages(messages) %}
+{% with messages = get_flashed_messages(category_filter=["success"]) %}
+{% if messages %}
+<div id="popupOverlay" class="container-fluid overlay">
+	<div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 maxWidth700 pop_container">
+		<div class="col-12 col-md-10 mx-auto marginVert20">
+			{% for message in messages %}
+			<p class="success bannerText"><b>{{ message }}</b></p>
+			{% endfor %}
+			<div class="col-12 col-md-8 mx-auto popCloseCont">
+				<a class="popClose" type="button" href="javascript:void(0);" onclick="closeOverlay()">Cerrar X</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% endwith %}
+{% with messages = get_flashed_messages(category_filter=["error"]) %}
+{% if messages %}
+<div id="popupOverlay" class="container-fluid overlay">
+	<div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 maxWidth700 pop_container">
+		<div class="col-12 col-md-10 mx-auto marginVert20">
+			{% for message in messages %}
+			<p class="error bannerText"><b>{{ message }}</b></p>
+			{% endfor %}
+			<div class="col-12 col-md-8 mx-auto popCloseCont">
+				<a class="popClose" type="button" href="javascript:void(0);" onclick="closeOverlay()">Cerrar X</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% endwith %}
+{% endmacro %}

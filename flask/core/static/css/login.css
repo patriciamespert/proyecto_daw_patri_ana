@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* El Horno Dulce - Panadería y Repostería */
+/* Estilos - Login */
+
+.maxWidth370 {
+    max-width: 370px !important;
+}
+
+h1 {
+	text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 30px !important;
+    color: #432e2f;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+#userIcon {
+	margin: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #d15a43;
+    color: #432e2f;
+    border-radius: 10px;
+    display: table;
+}
+
+.marginVert20 {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #432e2f;
+}
+
+input {
+	color: #432e2f;
+	font-family: arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+#ojo {
+    width: 24px;
+    height: 24px;
+}
+
+#validatePass {
+    display: initial;
+}
+
+#btnLogin {
+	display: block;
+    background-color: #d15a43;
+    border: 1px solid #d15a43;
+}
+
+#btnLogin:hover {
+	background-color: #e7cca6;
+}
+
+#linkRegistro {
+	text-align: center;
+    cursor: pointer;
+    color: #644a4f;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+#linkRegistro:hover {
+	color: #d15a43;
+}
+
+/* Media Query para pantallas SM y MD / igual o inferior a 767px */
+@media only screen and (max-width: 767px) {
+	#linkRegistro, #forgetPass {
+        text-decoration: underline;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 195px */
+@media only screen and (max-width: 195px) {
+	#userIcon {
+        display: none;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 179px */
+@media only screen and (max-width: 179px) {
+	#btnLogin {
+        word-break: break-all;
+	}
+}
+
+
+/* Media Query para pantallas S / igual o inferior a 179px */
+@media only screen and (max-width: 171px) {
+	#ojo {
+        word-break: break-all;
+	}
+}
+
+/* Media Query para pantallas S / igual o inferior a 135px */
+@media only screen and (max-width: 135px) {
+	h1, label, #linkRegistro {
+        word-break: break-all;
+	}
+}
